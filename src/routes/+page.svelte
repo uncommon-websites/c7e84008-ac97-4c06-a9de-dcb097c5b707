@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ArrowRight, CheckCircle2, Users, Zap, Target, TrendingUp, Clock, Shield } from 'lucide-svelte';
+  import { ArrowRight, CheckCircle2, Users, Zap, Target, TrendingUp, Clock, Shield, Award, Code2 } from 'lucide-svelte';
 
   // State for FAQ
   let openFaq = -1;
@@ -527,6 +527,140 @@
             <h3 class="text-lg font-semibold mb-2">Measurable ROI</h3>
             <p class="text-sm text-gray-600 leading-relaxed">Clear metrics and KPIs tracked from day one to demonstrate business impact.</p>
         </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack & Accreditation Section -->
+  <section class="max-w-[1400px] mx-auto px-6 py-24">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl font-medium tracking-tight mb-4">Built on cutting-edge AI technology</h2>
+        <p class="text-gray-600">We leverage the most advanced AI platforms and tools to deliver enterprise-grade solutions that scale with your business.</p>
+    </div>
+
+    <!-- Base44 Accreditation Highlight -->
+    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12 border-2 border-blue-200 mb-12">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-shrink-0">
+                <div class="w-24 h-24 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                    <Award size={48} class="text-blue-600" />
+                </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">
+                    Official Partner
+                </div>
+                <h3 class="text-2xl md:text-3xl font-semibold mb-3">Base44 Accredited Partner</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    We're proud to be one of the first Base44 accredited partners, demonstrating our commitment to excellence in AI implementation and our deep expertise in cutting-edge AI technologies. This accreditation validates our technical capabilities and ensures we deliver solutions that meet the highest industry standards.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech Stack Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- OpenAI -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-white" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">OpenAI GPT-4</h3>
+                    <p class="text-xs text-gray-500">Language Models</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Advanced language understanding and generation for intelligent automation and natural language processing.
+            </p>
+        </div>
+
+        <!-- Anthropic Claude -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-orange-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Anthropic Claude</h3>
+                    <p class="text-xs text-gray-500">AI Assistant</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Constitutional AI for safe, helpful, and harmless business automation with extended context windows.
+            </p>
+        </div>
+
+        <!-- LangChain -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-green-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">LangChain</h3>
+                    <p class="text-xs text-gray-500">AI Framework</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Powerful framework for building complex AI applications with chains, agents, and memory systems.
+            </p>
+        </div>
+
+        <!-- Vector Databases -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-purple-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Pinecone & Weaviate</h3>
+                    <p class="text-xs text-gray-500">Vector Databases</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                High-performance vector search for semantic understanding and intelligent data retrieval at scale.
+            </p>
+        </div>
+
+        <!-- Python & FastAPI -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-blue-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Python & FastAPI</h3>
+                    <p class="text-xs text-gray-500">Backend Infrastructure</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Modern, fast web framework for building robust APIs and microservices that power AI workflows.
+            </p>
+        </div>
+
+        <!-- Cloud Platforms -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-indigo-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">AWS & Azure</h3>
+                    <p class="text-xs text-gray-500">Cloud Infrastructure</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Enterprise-grade cloud platforms for scalable, secure, and reliable AI deployment and operations.
+            </p>
+        </div>
+    </div>
+
+    <!-- Additional Tech Info -->
+    <div class="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
+        <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            Our tech stack is constantly evolving to incorporate the latest advancements in AI technology. We evaluate and integrate new tools and platforms to ensure our clients benefit from cutting-edge capabilities while maintaining stability and security.
+        </p>
     </div>
   </section>
 

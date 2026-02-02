@@ -24,7 +24,7 @@
     <a href="/#services" class="hover:text-black transition-colors">Services</a>
     <a href="/#process" class="hover:text-black transition-colors">Process</a>
     <a href="/#results" class="hover:text-black transition-colors">Results</a>
-    <a href="/#contact" class="hover:text-black transition-colors">Contact</a>
+    <a href="/contact" class="hover:text-black transition-colors">Contact</a>
   </div>
 
   <!-- Auth Buttons -->

@@ -49,7 +49,7 @@
                 <h3 class="font-semibold text-gray-400 uppercase tracking-wider mb-1 text-[10px]">Company</h3>
                 <a href="#" class="text-gray-600 hover:text-black">About</a>
                 <a href="#" class="text-gray-600 hover:text-black">Careers</a>
-                <a href="#" class="text-gray-600 hover:text-black">Contact</a>
+                <a href="/contact" class="text-gray-600 hover:text-black">Contact</a>
                 <a href="#" class="text-gray-600 hover:text-black">Partners</a>
                 <a href="#" class="text-gray-600 hover:text-black">Privacy Policy</a>
                 <a href="#" class="text-gray-600 hover:text-black">Terms of Service</a>

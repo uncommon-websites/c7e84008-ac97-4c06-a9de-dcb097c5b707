@@ -88,7 +88,7 @@
               </div>
               <!-- Active Line -->
               <div class="border-l-2 border-gray-800 pl-4 py-1">
-                <p class="font-medium text-gray-900 text-lg">Company automates your core business operations.</p>
+                <p class="font-medium text-gray-900 text-lg">Flowgrid automates your core business operations.</p>
               </div>
             </div>
 
@@ -143,7 +143,7 @@
 
       <!-- Powered by text -->
       <div class="absolute bottom-4 right-1/2 translate-x-1/2 text-[10px] text-gray-500 opacity-50">
-        Powered by Company Strategy
+        Powered by Flowgrid Strategy
       </div>
 
     </div>
@@ -284,7 +284,7 @@
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
                     <span class="text-gray-700">Custom dashboard development</span>
                 </li>
-                <li class="flex items-start gap-3">
+                <li class="flex itemms-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
                     <span class="text-gray-700">Data processing automation</span>
                 </li>
@@ -453,7 +453,7 @@
                 </div>
             </div>
             <p class="text-gray-700 leading-relaxed italic">
-                "Company transformed our operations in weeks, not months. Their rapid pilot approach let us see real results before committing to a full rollout. We're now processing 3x more customer requests with the same team size."
+                "Flowgrid transformed our operations in weeks, not months. Their rapid pilot approach let us see real results before committing to a full rollout. We're now processing 3x more customer requests with the same team size."
             </p>
         </div>
 
@@ -475,7 +475,7 @@
   <!-- Why Choose Us Section -->
   <section class="max-w-[1400px] mx-auto px-6 py-24 bg-gray-50 rounded-3xl">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-4xl font-medium tracking-tight mb-4">Why mid-market leaders choose Company</h2>
+        <h2 class="text-4xl font-medium tracking-tight mb-4">Why mid-market leaders choose Flowgrid</h2>
         <p class="text-gray-600">We understand the unique challenges of scaling businesses — limited resources, tight timelines, and the need for proven results.</p>
     </div>
 

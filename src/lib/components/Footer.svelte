@@ -66,14 +66,14 @@
                         fill="currentColor"
                     />
                 </svg>
-                <span class="font-bold text-lg tracking-tight">Company</span>
+                <span class="font-bold text-lg tracking-tight">Flowgrid</span>
             </div>
             
             <div class="flex items-center gap-6 text-gray-500">
                 <a href="#" class="hover:text-black">Privacy</a>
                 <a href="#" class="hover:text-black">Terms</a>
                 <a href="#" class="hover:text-black">Security</a>
-                <span class="text-gray-400">© 2024 Company. All rights reserved.</span>
+                <span class="text-gray-400">© 2024 Flowgrid. All rights reserved.</span>
             </div>
         </div>
     </div>

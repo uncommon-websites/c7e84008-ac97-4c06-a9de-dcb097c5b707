@@ -14,7 +14,7 @@
           fill="currentColor"
         />
       </svg>
-      <span>Company</span>
+      <span>Flowgrid</span>
     </a>
   </div>
 

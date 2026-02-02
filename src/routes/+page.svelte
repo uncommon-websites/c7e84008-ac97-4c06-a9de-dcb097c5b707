@@ -150,7 +150,7 @@
   </section>
 
   <!-- Services Overview Section -->
-  <section class="max-w-[1200px] mx-auto px-6 py-24 text-center">
+  <section id="services" class="max-w-[1200px] mx-auto px-6 py-24 text-center">
     <span class="text-sm font-medium text-gray-500 mb-4 block uppercase tracking-wider">Our Services</span>
     <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-8 leading-tight">
       Full-spectrum AI implementation — from strategic planning to market-ready products
@@ -180,7 +180,7 @@
   </section>
 
   <!-- Core Services Section -->
-  <section class="max-w-[1400px] mx-auto px-6 py-12 relative">
+  <section id="core-services" class="max-w-[1400px] mx-auto px-6 py-12 relative">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
         
         <!-- Service 1 -->
@@ -355,7 +355,7 @@
   </section>
 
   <!-- Process Section -->
-  <section class="max-w-[1400px] mx-auto px-6 py-24">
+  <section id="process" class="max-w-[1400px] mx-auto px-6 py-24">
     <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-4xl font-medium tracking-tight mb-4">Our proven implementation process</h2>
         <p class="text-gray-600">From initial discovery to full deployment, we follow a structured approach that ensures rapid results and measurable ROI at every stage.</p>
@@ -413,7 +413,7 @@
   </section>
 
   <!-- Results & Testimonials -->
-  <section class="max-w-[1400px] mx-auto px-6 py-24">
+  <section id="results" class="max-w-[1400px] mx-auto px-6 py-24">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-4xl font-medium tracking-tight mb-4">Trusted by scaling operations teams</h2>
         <p class="text-gray-600">See how mid-market leaders are transforming their businesses with strategic AI implementation.</p>

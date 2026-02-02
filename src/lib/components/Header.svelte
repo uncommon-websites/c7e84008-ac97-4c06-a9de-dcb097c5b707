@@ -20,12 +20,11 @@
 
   <!-- Navigation Links (Desktop) -->
   <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-800">
-    <a href="#consultancy" class="hover:text-black transition-colors">Consultancy</a>
-    <a href="#strategy" class="hover:text-black transition-colors">AI Strategy</a>
-    <a href="#workflows" class="hover:text-black transition-colors">Workflows</a>
-    <a href="#case-studies" class="hover:text-black transition-colors">Case Studies</a>
-    <a href="#implementation" class="hover:text-black transition-colors">Implementation</a>
-    <a href="#process" class="hover:text-black transition-colors">Process</a>
+    <a href="/consultancy" class="hover:text-black transition-colors">Consultancy</a>
+    <a href="/#services" class="hover:text-black transition-colors">Services</a>
+    <a href="/#process" class="hover:text-black transition-colors">Process</a>
+    <a href="/#results" class="hover:text-black transition-colors">Results</a>
+    <a href="/#contact" class="hover:text-black transition-colors">Contact</a>
   </div>
 
   <!-- Auth Buttons -->

@@ -37,6 +37,12 @@
       duration: "4-8 weeks",
       ideal: "Teams testing AI viability",
       deliverables: ["Focused use case", "Proof of concept", "ROI analysis", "Scale-up recommendations"]
+    },
+    {
+      title: "AI Training - Anthropic Focused",
+      duration: "2-4 weeks",
+      ideal: "Teams building expertise with Claude and Anthropic AI",
+      deliverables: ["Hands-on Claude workshops", "Prompt engineering mastery", "Best practices guide", "Custom use case development"]
     }
   ];
 
@@ -225,7 +231,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {#each engagementModels as model, i}
         <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-shadow">
           <div class="flex items-center justify-between mb-6">

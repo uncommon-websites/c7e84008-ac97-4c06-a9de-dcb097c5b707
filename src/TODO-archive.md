@@ -57,3 +57,14 @@
 - [ ] Add AI training page
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-03T18:24:28.476Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-03T18:24:02.227Z -->
+
+# Current Todo List State
+
+- [ ] Add AI training model: Anthropic
+
+──────────────────────────────────────────────────

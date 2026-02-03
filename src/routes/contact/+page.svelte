@@ -16,34 +16,6 @@
   let formSubmitted = $state(false);
   let isSubmitting = $state(false);
 
-  // Contact methods
-  const contactMethods = [
-    {
-      icon: Mail,
-      title: "Email us",
-      description: "Our team typically responds within 24 hours",
-      contact: "hello@flowgrid.ai",
-      action: "mailto:hello@flowgrid.ai",
-      color: "blue"
-    },
-    {
-      icon: Phone,
-      title: "Call us",
-      description: "Monday to Friday, 9am to 6pm EST",
-      contact: "+1 (555) 123-4567",
-      action: "tel:+15551234567",
-      color: "green"
-    },
-    {
-      icon: Calendar,
-      title: "Book a meeting",
-      description: "Schedule a free 30-minute consultation",
-      contact: "View calendar",
-      action: "#calendar",
-      color: "purple"
-    }
-  ];
-
   // Office locations
   const offices = [
     {
@@ -114,41 +86,6 @@
         </p>
       </div>
 
-      <!-- Contact Methods -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        {#each contactMethods as method}
-          <a href={method.action} class={[
-            'bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-all group',
-            method.color === 'blue' ? 'hover:border-blue-200' : '',
-            method.color === 'green' ? 'hover:border-green-200' : '',
-            method.color === 'purple' ? 'hover:border-purple-200' : ''
-          ]}>
-            <div class={[
-              'w-12 h-12 rounded-xl flex items-center justify-center mb-4',
-              method.color === 'blue' ? 'bg-blue-100' : '',
-              method.color === 'green' ? 'bg-green-100' : '',
-              method.color === 'purple' ? 'bg-purple-100' : ''
-            ]}>
-              <svelte:component this={method.icon} size={24} class={[
-                method.color === 'blue' ? 'text-blue-600' : '',
-                method.color === 'green' ? 'text-green-600' : '',
-                method.color === 'purple' ? 'text-purple-600' : ''
-              ]} />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">{method.title}</h3>
-            <p class="text-sm text-gray-600 mb-3">{method.description}</p>
-            <div class={[
-              'text-sm font-medium flex items-center gap-2 group-hover:gap-3 transition-all',
-              method.color === 'blue' ? 'text-blue-600' : '',
-              method.color === 'green' ? 'text-green-600' : '',
-              method.color === 'purple' ? 'text-purple-600' : ''
-            ]}>
-              {method.contact}
-              <ArrowRight size={16} />
-            </div>
-          </a>
-        {/each}
-      </div>
     </div>
   </section>
 

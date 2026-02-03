@@ -120,3 +120,22 @@
 - [ ] Remove book a meeting card
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-03T19:11:18.362Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-03T19:09:48.280Z -->
+
+# Current Todo List State
+
+- [ ] Change services page layout
+- [ ] Add 4 key modules
+- [ ] Add sales options to modules
+- [ ] Add 'what you get' to modules
+- [ ] Add 'how you get it' to modules
+- [ ] Add 'why it's important' to modules
+- [ ] Add examples to each module
+- [ ] Showcase value in examples
+- [ ] Showcase outcome in examples
+
+──────────────────────────────────────────────────

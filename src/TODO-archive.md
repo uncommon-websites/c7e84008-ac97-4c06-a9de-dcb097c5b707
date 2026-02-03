@@ -79,3 +79,17 @@
 - [ ] Anchor learn more button
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-03T18:31:30.114Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-03T18:29:22.270Z -->
+
+# Current Todo List State
+
+- [ ] Build product page
+- [ ] Focus page on AI training
+- [ ] Highlight Anthropic
+- [ ] Link 'Learn More' to page
+
+──────────────────────────────────────────────────

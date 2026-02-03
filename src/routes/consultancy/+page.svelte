@@ -253,7 +253,7 @@
               </div>
             {/each}
           </div>
-          <a href="#contact" class="mt-8 w-full inline-flex items-center justify-center gap-2 bg-black text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-gray-800 transition-colors">
+          <a href={i === 3 ? '/training/anthropic' : '#contact'} class="mt-8 w-full inline-flex items-center justify-center gap-2 bg-black text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-gray-800 transition-colors">
             Learn more
             <ArrowRight size={16} />
           </a>

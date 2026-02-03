@@ -179,3 +179,14 @@
 - [ ] Add Figma to stack
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-03T20:57:11.221Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-03T20:56:53.113Z -->
+
+# Current Todo List State
+
+- [ ] Remove pinecone from tech stack
+
+──────────────────────────────────────────────────

@@ -672,8 +672,8 @@
                     <Code2 size={24} class="text-purple-600" />
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-1">Pinecone & Weaviate</h3>
-                    <p class="text-xs text-gray-500">Vector Databases</p>
+                    <h3 class="text-lg font-semibold mb-1">Weaviate</h3>
+                    <p class="text-xs text-gray-500">Vector Database</p>
                 </div>
             </div>
             <p class="text-sm text-gray-600 leading-relaxed">

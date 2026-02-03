@@ -172,6 +172,9 @@
       <span class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 font-medium">
         <Shield size={16} class="text-indigo-600" /> Strategic Planning
       </span>
+      <a href="/training/anthropic" class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-50 to-red-50 rounded-full border border-orange-200 font-medium hover:shadow-md transition-shadow">
+        <Users size={16} class="text-orange-600" /> Anthropic AI Training
+      </a>
     </div>
 
     <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">

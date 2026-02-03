@@ -93,3 +93,17 @@
 - [ ] Link 'Learn More' to page
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-03T18:36:56.224Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-03T18:36:27.986Z -->
+
+# Current Todo List State
+
+- [ ] Remove 'our team' section
+- [ ] Remove 'our offices' section
+- [ ] Remove 'common questions'
+- [ ] Remove 'ready to get started'
+
+──────────────────────────────────────────────────

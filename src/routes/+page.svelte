@@ -600,28 +600,23 @@
         <p class="text-gray-600">We leverage the most advanced AI platforms and tools to deliver enterprise-grade solutions that scale with your business.</p>
     </div>
 
-    <!-- Base44 Accreditation Highlight -->
-    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12 border-2 border-blue-200 mb-12">
-        <div class="flex flex-col md:flex-row items-center gap-8">
-            <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-white rounded-2xl shadow-lg flex items-center justify-center">
-                    <Award size={48} class="text-blue-600" />
-                </div>
-            </div>
-            <div class="flex-1 text-center md:text-left">
-                <div class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">
-                    Official Partner
-                </div>
-                <h3 class="text-2xl md:text-3xl font-semibold mb-3">Base44 Accredited Partner</h3>
-                <p class="text-gray-700 leading-relaxed">
-                    We're proud to be one of the first Base44 accredited partners, demonstrating our commitment to excellence in AI implementation and our deep expertise in cutting-edge AI technologies. This accreditation validates our technical capabilities and ensures we deliver solutions that meet the highest industry standards.
-                </p>
-            </div>
-        </div>
-    </div>
-
     <!-- Tech Stack Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Base44 -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award size={24} class="text-blue-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Base44</h3>
+                    <p class="text-xs text-gray-500">Accredited Partner</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Official Base44 accredited partner, demonstrating excellence in AI implementation and deep expertise in cutting-edge technologies.
+            </p>
+        </div>
         <!-- OpenAI -->
         <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <div class="flex items-start gap-4 mb-4">
@@ -715,6 +710,54 @@
             </div>
             <p class="text-sm text-gray-600 leading-relaxed">
                 Enterprise-grade cloud platforms for scalable, secure, and reliable AI deployment and operations.
+            </p>
+        </div>
+
+        <!-- Supabase -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-emerald-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Supabase</h3>
+                    <p class="text-xs text-gray-500">Backend Platform</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Open-source Firebase alternative providing real-time databases, authentication, and storage for rapid development.
+            </p>
+        </div>
+
+        <!-- Vercel -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-white" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Vercel</h3>
+                    <p class="text-xs text-gray-500">Deployment Platform</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Modern deployment platform for frontend frameworks with edge functions and global CDN for optimal performance.
+            </p>
+        </div>
+
+        <!-- Figma -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Code2 size={24} class="text-pink-600" />
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-1">Figma</h3>
+                    <p class="text-xs text-gray-500">Design Platform</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Collaborative design tool for creating intuitive user interfaces and seamless user experiences for AI products.
             </p>
         </div>
     </div>

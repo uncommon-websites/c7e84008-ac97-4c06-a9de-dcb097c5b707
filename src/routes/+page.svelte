@@ -192,7 +192,7 @@
             <p class="text-gray-600 leading-relaxed mb-6">
                 Transform your existing business processes with strategic AI automation. We analyze your current workflows, identify bottlenecks, and implement custom AI solutions that integrate seamlessly with your existing tech stack — delivering immediate efficiency gains.
             </p>
-            <ul class="space-y-3">
+            <ul class="space-y-3 mb-8">
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
                     <span class="text-gray-700">Process automation and optimization</span>
@@ -206,6 +206,26 @@
                     <span class="text-gray-700">Seamless tech stack compatibility</span>
                 </li>
             </ul>
+            
+            <!-- Real-world Example -->
+            <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                <h4 class="text-sm font-semibold text-blue-900 mb-3">Real-world example</h4>
+                <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                    <span class="font-semibold text-gray-900">E-commerce company</span> processing 500+ customer support tickets daily spent 8 hours on manual data entry and categorization.
+                </p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white rounded-lg p-3">
+                        <div class="text-xs text-gray-500 mb-1">Before</div>
+                        <div class="text-lg font-bold text-gray-900">8 hours/day</div>
+                        <div class="text-xs text-gray-600">Manual processing</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-3">
+                        <div class="text-xs text-gray-500 mb-1">After</div>
+                        <div class="text-lg font-bold text-green-600">3 hours/day</div>
+                        <div class="text-xs text-gray-600">AI-automated workflow</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100 order-2 md:order-2 min-h-[400px] flex items-center justify-center">
             <div class="w-full max-w-md">
@@ -282,12 +302,12 @@
             <p class="text-gray-600 leading-relaxed mb-6">
                 Build custom AI-powered tools that solve your team's unique operational challenges. From data processing automation to intelligent dashboards, we develop internal tools that enhance productivity and decision-making across your organization.
             </p>
-            <ul class="space-y-3">
+            <ul class="space-y-3 mb-8">
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
                     <span class="text-gray-700">Custom dashboard development</span>
                 </li>
-                <li class="flex itemms-start gap-3">
+                <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
                     <span class="text-gray-700">Data processing automation</span>
                 </li>
@@ -296,6 +316,26 @@
                     <span class="text-gray-700">Team-specific AI assistants</span>
                 </li>
             </ul>
+            
+            <!-- Real-world Example -->
+            <div class="bg-purple-50 rounded-xl p-6 border border-purple-100">
+                <h4 class="text-sm font-semibold text-purple-900 mb-3">Real-world example</h4>
+                <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                    <span class="font-semibold text-gray-900">SaaS company</span> sales team manually compiled weekly performance reports from 5 different data sources, taking 6 hours per week.
+                </p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white rounded-lg p-3">
+                        <div class="text-xs text-gray-500 mb-1">Before</div>
+                        <div class="text-lg font-bold text-gray-900">6 hours/week</div>
+                        <div class="text-xs text-gray-600">Manual reporting</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-3">
+                        <div class="text-xs text-gray-500 mb-1">After</div>
+                        <div class="text-lg font-bold text-purple-600">Real-time</div>
+                        <div class="text-xs text-gray-600">AI-powered dashboard</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Service 3 -->
@@ -304,7 +344,7 @@
             <p class="text-gray-600 leading-relaxed mb-6">
                 Transform your AI innovation into market-ready products. We guide you through the entire go-to-market journey — from product strategy and development to launch planning and market positioning — ensuring your AI solution resonates with your target customers.
             </p>
-            <ul class="space-y-3">
+            <ul class="space-y-3 mb-8">
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
                     <span class="text-gray-700">Product strategy & positioning</span>
@@ -318,6 +358,26 @@
                     <span class="text-gray-700">Launch planning & execution</span>
                 </li>
             </ul>
+            
+            <!-- Real-world Example -->
+            <div class="bg-green-50 rounded-xl p-6 border border-green-100">
+                <h4 class="text-sm font-semibold text-green-900 mb-3">Real-world example</h4>
+                <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                    <span class="font-semibold text-gray-900">B2B tech company</span> had an innovative AI feature but no clear path to market. We developed positioning, pricing strategy, and launch plan.
+                </p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white rounded-lg p-3">
+                        <div class="text-xs text-gray-500 mb-1">Timeline</div>
+                        <div class="text-lg font-bold text-gray-900">12 weeks</div>
+                        <div class="text-xs text-gray-600">Concept to launch</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-3">
+                        <div class="text-xs text-gray-500 mb-1">Result</div>
+                        <div class="text-lg font-bold text-green-600">$1.2M ARR</div>
+                        <div class="text-xs text-gray-600">First 6 months</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100 min-h-[300px] flex items-center justify-center order-6 md:order-6">
             <div class="w-full max-w-md">

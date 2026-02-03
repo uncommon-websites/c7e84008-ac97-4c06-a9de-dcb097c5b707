@@ -233,7 +233,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {#each engagementModels as model, i}
-        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-shadow">
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
           <div class="flex items-center justify-between mb-6">
             <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center">
               <span class="text-xl font-bold text-gray-900">{i + 1}</span>
@@ -244,7 +244,7 @@
           <p class="text-sm text-gray-600 mb-6 pb-6 border-b border-gray-100">
             <span class="font-medium text-gray-700">Ideal for:</span> {model.ideal}
           </p>
-          <div class="space-y-3">
+          <div class="space-y-3 flex-grow">
             <div class="text-sm font-semibold text-gray-900 mb-3">Key deliverables:</div>
             {#each model.deliverables as deliverable}
               <div class="flex items-start gap-2">

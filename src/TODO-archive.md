@@ -68,3 +68,14 @@
 - [ ] Add AI training model: Anthropic
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-03T18:28:04.664Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-03T18:27:40.383Z -->
+
+# Current Todo List State
+
+- [ ] Anchor learn more button
+
+──────────────────────────────────────────────────

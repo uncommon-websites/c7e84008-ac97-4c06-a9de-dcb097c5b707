@@ -190,3 +190,17 @@
 - [ ] Remove pinecone from tech stack
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-04T08:26:25.767Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-04T08:19:44.214Z -->
+
+# Current Todo List State
+
+- [ ] Amend homepage copy
+- [ ] Focus copy on CRM for brokers
+- [ ] Update 'Book a Call' text
+- [ ] Update 'See How It Works' text
+
+──────────────────────────────────────────────────

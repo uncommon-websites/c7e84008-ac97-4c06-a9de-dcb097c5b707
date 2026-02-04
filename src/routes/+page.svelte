@@ -4,14 +4,14 @@
   // State for FAQ
   let openFaq = -1;
   const faqs = [
-    "What types of AI implementations do you specialize in?",
-    "How long does a typical implementation take?",
-    "Do you work with companies outside the mid-market?",
-    "What is your pricing model?",
-    "How do you measure ROI from AI implementations?",
-    "Do you provide ongoing support after implementation?",
-    "What industries do you serve?",
-    "Can you integrate with our existing tech stack?"
+    "What makes this different from Salesforce or HubSpot?",
+    "How long does implementation take?",
+    "Can you integrate with our existing tools?",
+    "What's included in the monthly support fee?",
+    "Do you work with brokers outside the UK?",
+    "Can we customise the pipeline stages?",
+    "What happens if we need changes after launch?",
+    "Is our data secure?"
   ];
 
   function toggleFaq(index: number) {
@@ -29,17 +29,22 @@
         <!-- Left: Headline & CTA -->
         <div class="max-w-3xl">
           <h1 class="text-5xl md:text-[5.5rem] leading-[1.05] font-medium tracking-tight text-black mb-10">
-            Strategic AI consultancy for business transformation
+            Stop fighting your CRM. Start closing deals.
           </h1>
-          <a href="#contact" class="inline-block bg-black text-white text-lg font-medium px-8 py-3.5 rounded-full hover:bg-gray-800 transition-colors">
-            Book an AI strategy audit
-          </a>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-block bg-black text-white text-lg font-medium px-8 py-3.5 rounded-full hover:bg-gray-800 transition-colors">
+              Book a call
+            </a>
+            <a href="#how-it-works" class="inline-block bg-white text-black border-2 border-gray-200 text-lg font-medium px-8 py-3.5 rounded-full hover:bg-gray-50 transition-colors">
+              See how it works
+            </a>
+          </div>
         </div>
 
         <!-- Right: Description -->
         <div class="max-w-[500px] lg:mb-6">
           <p class="text-lg md:text-[1.15rem] leading-relaxed text-gray-800">
-            Built for operations leaders and scaling teams — eliminate bottlenecks with custom AI workflows and strategic automation pilots designed for rapid business transformation.
+            Purpose-built pipeline management for brokers. Not another generic tool you have to bend your business around.
           </p>
         </div>
       </div>
@@ -55,7 +60,7 @@
         <!-- UI Header -->
         <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
           <div class="flex items-center gap-6">
-            <span class="font-medium text-gray-900">Workflow AI</span>
+            <span class="font-medium text-gray-900">Pipeline CRM</span>
             <div class="flex items-center gap-4 text-gray-400">
               <!-- Undo Icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
@@ -88,28 +93,28 @@
               </div>
               <!-- Active Line -->
               <div class="border-l-2 border-gray-800 pl-4 py-1">
-                <p class="font-medium text-gray-900 text-lg">Flowgrid automates your core business operations.</p>
+                <p class="font-medium text-gray-900 text-lg">Track deals from first contact through commission paid.</p>
               </div>
             </div>
 
             <div class="flex gap-4 mb-6 opacity-40">
               <div class="w-4"></div> <!-- Spacer -->
               <div class="border-l-2 border-gray-300 pl-4 py-1">
-                <p class="text-gray-800 text-lg leading-relaxed">Bridge the gap between strategy and execution with custom AI integrations tailored for your team's specific stack.</p>
+                <p class="text-gray-800 text-lg leading-relaxed">Manage sub-broker networks with automatic commission splits and performance tracking.</p>
               </div>
             </div>
 
             <div class="flex gap-4 mb-6 opacity-40">
               <div class="w-4"></div> <!-- Spacer -->
               <div class="border-l-2 border-gray-300 pl-4 py-1">
-                <p class="text-gray-800 text-lg leading-relaxed">Overcome implementation fears with rapid workflow automation pilots and proven frameworks designed for mid-market leaders.</p>
+                <p class="text-gray-800 text-lg leading-relaxed">Send contracts for e-signature directly from deal records with automatic document attachment.</p>
               </div>
             </div>
 
             <div class="flex gap-4 opacity-40">
               <div class="w-4"></div> <!-- Spacer -->
               <div class="border-l-2 border-gray-300 pl-4 py-1">
-                <p class="text-gray-800 text-lg leading-relaxed">Our implementation roadmap ensures measurable ROI within weeks of deployment.</p>
+                <p class="text-gray-800 text-lg leading-relaxed">Commission tracking that actually works — expected, pending, and received by deal and period.</p>
               </div>
             </div>
           </div>
@@ -132,7 +137,7 @@
         <img src="https://placehold.co/40x40/3b82f6/white?text=AI" alt="AI Orb" class="w-10 h-10 rounded-full">
         
         <!-- Button -->
-        <button class="bg-black text-white text-xs font-bold px-4 py-2 rounded-full tracking-wide">AI PILOT</button>
+        <button class="bg-black text-white text-xs font-bold px-4 py-2 rounded-full tracking-wide">LIVE DEMO</button>
         
         <!-- Language Selector -->
         <div class="flex items-center gap-1 pl-1 cursor-pointer">
@@ -143,273 +148,431 @@
 
       <!-- Powered by text -->
       <div class="absolute bottom-4 right-1/2 translate-x-1/2 text-[10px] text-gray-500 opacity-50">
-        Powered by Flowgrid Strategy
+        Built for Brokers
       </div>
 
     </div>
   </section>
 
-  <!-- Services Overview Section -->
-  <section id="services" class="max-w-[1200px] mx-auto px-6 py-24 text-center">
-    <span class="text-sm font-medium text-gray-500 mb-4 block uppercase tracking-wider">Our Services</span>
-    <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-8 leading-tight">
-      Full-spectrum AI implementation — from strategic planning to market-ready products
+  <!-- Problem Section -->
+  <section id="problem" class="max-w-[1200px] mx-auto px-6 py-24">
+    <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-16 text-center">
+      The problem
     </h2>
     
-    <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-700 mb-10">
-      <span class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 font-medium">
-        <Zap size={16} class="text-blue-600" /> Workflow Integration
-      </span>
-      <span class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 font-medium">
-        <Target size={16} class="text-purple-600" /> Internal Tool Development
-      </span>
-      <span class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 font-medium">
-        <TrendingUp size={16} class="text-green-600" /> GTM Product Strategy
-      </span>
-      <span class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 font-medium">
-        <Clock size={16} class="text-orange-600" /> Rapid Pilots
-      </span>
-      <span class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 font-medium">
-        <Shield size={16} class="text-indigo-600" /> Strategic Planning
-      </span>
-      <a href="/training/anthropic" class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-50 to-red-50 rounded-full border border-orange-200 font-medium hover:shadow-md transition-shadow">
-        <Users size={16} class="text-orange-600" /> Anthropic AI Training
-      </a>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl p-8 border border-gray-200">
+        <h3 class="text-2xl font-semibold mb-4">Salesforce is overkill</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Enterprise complexity you don't need. Six months to configure. Half your team still uses spreadsheets anyway.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 border border-gray-200">
+        <h3 class="text-2xl font-semibold mb-4">HubSpot doesn't get brokers</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Built for SaaS companies, not commission-based businesses. No sub-broker tracking. No supplier management. No deal attribution.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 border border-gray-200">
+        <h3 class="text-2xl font-semibold mb-4">Spreadsheets are chaos</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Multiple versions. No audit trail. Commission calculations held together with hope and nested IF statements.
+        </p>
+      </div>
     </div>
 
-    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-      We bridge the gap between AI potential and business reality. Our proven frameworks help mid-market operations leaders implement AI solutions that deliver measurable ROI within weeks, not months.
+    <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mt-12">
+      You're a broker, not a software administrator.
     </p>
   </section>
 
-  <!-- Core Services Section -->
-  <section id="core-services" class="max-w-[1400px] mx-auto px-6 py-12 relative">
+  <!-- Solution Section -->
+  <section id="solution" class="max-w-[1400px] mx-auto px-6 py-24 relative">
+    <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-8 text-center">
+      The solution
+    </h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16 text-center">
+      A CRM that speaks broker. Built by someone who's implemented CRM systems across energy, telecoms, and mortgage brokers. Every feature exists because a broker needed it.
+    </p>
+    
     <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
         
-        <!-- Service 1 -->
+        <!-- Feature 1 -->
         <div class="flex flex-col justify-center order-1 md:order-1">
-            <h3 class="text-3xl font-medium mb-4">AI Workflow Integration</h3>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <span class="text-lg font-bold text-blue-600">01</span>
+                </div>
+                <h3 class="text-3xl font-medium">Deal pipeline that matches your reality</h3>
+            </div>
             <p class="text-gray-600 leading-relaxed mb-6">
-                Transform your existing business processes with strategic AI automation. We analyze your current workflows, identify bottlenecks, and implement custom AI solutions that integrate seamlessly with your existing tech stack — delivering immediate efficiency gains.
+                Custom stages for your actual sales process. From first contact through commission paid. Track what matters to your business, not what a generic CRM thinks you should track.
             </p>
-            <ul class="space-y-3 mb-8">
+            <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Process automation and optimization</span>
+                    <span class="text-gray-700">Custom pipeline stages</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Custom AI model integration</span>
+                    <span class="text-gray-700">Deal value tracking</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Seamless tech stack compatibility</span>
+                    <span class="text-gray-700">Commission forecasting</span>
                 </li>
             </ul>
-            
-            <!-- Real-world Example -->
-            <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
-                <h4 class="text-sm font-semibold text-blue-900 mb-3">Real-world example</h4>
-                <p class="text-sm text-gray-700 leading-relaxed mb-3">
-                    <span class="font-semibold text-gray-900">E-commerce company</span> processing 500+ customer support tickets daily spent 8 hours on manual data entry and categorization.
-                </p>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="bg-white rounded-lg p-3">
-                        <div class="text-xs text-gray-500 mb-1">Before</div>
-                        <div class="text-lg font-bold text-gray-900">8 hours/day</div>
-                        <div class="text-xs text-gray-600">Manual processing</div>
-                    </div>
-                    <div class="bg-white rounded-lg p-3">
-                        <div class="text-xs text-gray-500 mb-1">After</div>
-                        <div class="text-lg font-bold text-green-600">3 hours/day</div>
-                        <div class="text-xs text-gray-600">AI-automated workflow</div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100 order-2 md:order-2 min-h-[400px] flex items-center justify-center">
             <div class="w-full max-w-md">
                 <div class="bg-white rounded-xl shadow-lg p-6 mb-4">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <Zap size={20} class="text-blue-600" />
+                            <Target size={20} class="text-blue-600" />
                         </div>
                         <div>
-                            <div class="text-sm font-semibold text-gray-900">Workflow Automation</div>
-                            <div class="text-xs text-gray-500">Active Process</div>
+                            <div class="text-sm font-semibold text-gray-900">Deal Pipeline</div>
+                            <div class="text-xs text-gray-500">Active Deals</div>
                         </div>
                     </div>
                     <div class="space-y-2">
-                        <div class="h-2 bg-blue-100 rounded-full overflow-hidden">
-                            <div class="h-full bg-blue-600 rounded-full" style="width: 85%"></div>
+                        <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+                            <span class="text-xs text-gray-600">First Contact</span>
+                            <span class="text-xs font-bold">12</span>
                         </div>
-                        <div class="text-xs text-gray-600">85% efficiency improvement</div>
+                        <div class="flex justify-between items-center p-2 bg-blue-50 rounded border border-blue-200">
+                            <span class="text-xs text-gray-900 font-medium">Proposal Sent</span>
+                            <span class="text-xs font-bold text-blue-600">8</span>
+                        </div>
+                        <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+                            <span class="text-xs text-gray-600">Contract Signed</span>
+                            <span class="text-xs font-bold">5</span>
+                        </div>
+                        <div class="flex justify-between items-center p-2 bg-green-50 rounded">
+                            <span class="text-xs text-gray-600">Commission Paid</span>
+                            <span class="text-xs font-bold text-green-600">3</span>
+                        </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-3 gap-3">
                     <div class="bg-white rounded-lg p-3 text-center shadow-sm">
-                        <div class="text-lg font-bold text-gray-900">-60%</div>
-                        <div class="text-[10px] text-gray-500">Processing Time</div>
+                        <div class="text-lg font-bold text-gray-900">£48K</div>
+                        <div class="text-[10px] text-gray-500">Pipeline Value</div>
                     </div>
                     <div class="bg-white rounded-lg p-3 text-center shadow-sm">
-                        <div class="text-lg font-bold text-gray-900">+40%</div>
-                        <div class="text-[10px] text-gray-500">Throughput</div>
+                        <div class="text-lg font-bold text-gray-900">28</div>
+                        <div class="text-[10px] text-gray-500">Active Deals</div>
                     </div>
                     <div class="bg-white rounded-lg p-3 text-center shadow-sm">
-                        <div class="text-lg font-bold text-gray-900">98%</div>
-                        <div class="text-[10px] text-gray-500">Accuracy</div>
+                        <div class="text-lg font-bold text-green-600">£12K</div>
+                        <div class="text-[10px] text-gray-500">This Month</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Service 2 -->
+        <!-- Feature 2 Visual -->
         <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100 min-h-[400px] flex items-center justify-center order-4 md:order-3 relative overflow-hidden">
             <div class="w-full max-w-md">
                 <div class="bg-white rounded-xl shadow-lg p-6">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <Target size={20} class="text-purple-600" />
+                            <Users size={20} class="text-purple-600" />
                         </div>
                         <div>
-                            <div class="text-sm font-semibold text-gray-900">Internal Tool</div>
-                            <div class="text-xs text-gray-500">Development Pipeline</div>
+                            <div class="text-sm font-semibold text-gray-900">Sub-Broker Network</div>
+                            <div class="text-xs text-gray-500">Performance Overview</div>
                         </div>
                     </div>
                     <div class="space-y-3">
-                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                            <span class="text-xs font-medium text-gray-700">Discovery</span>
-                            <CheckCircle2 size={16} class="text-green-600" />
+                        <div class="flex items-center justify-between p-3 bg-purple-50 rounded-lg border border-purple-200">
+                            <div>
+                                <div class="text-xs font-medium text-gray-900">Sarah Johnson</div>
+                                <div class="text-[10px] text-gray-500">8 deals • £24K pipeline</div>
+                            </div>
+                            <div class="text-sm font-bold text-purple-600">£6,400</div>
                         </div>
                         <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                            <span class="text-xs font-medium text-gray-700">Prototype</span>
-                            <CheckCircle2 size={16} class="text-green-600" />
+                            <div>
+                                <div class="text-xs font-medium text-gray-700">Mike Thompson</div>
+                                <div class="text-[10px] text-gray-500">5 deals • £18K pipeline</div>
+                            </div>
+                            <div class="text-sm font-bold text-gray-900">£4,200</div>
                         </div>
-                        <div class="flex items-center justify-between p-3 bg-purple-100 rounded-lg border-2 border-purple-300">
-                            <span class="text-xs font-medium text-gray-900">Build & Deploy</span>
-                            <div class="w-4 h-4 rounded-full bg-purple-600 animate-pulse"></div>
-                        </div>
-                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg opacity-50">
-                            <span class="text-xs font-medium text-gray-700">Scale & Optimize</span>
-                            <div class="w-4 h-4 rounded-full border-2 border-gray-300"></div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div>
+                                <div class="text-xs font-medium text-gray-700">Emma Davis</div>
+                                <div class="text-[10px] text-gray-500">3 deals • £12K pipeline</div>
+                            </div>
+                            <div class="text-sm font-bold text-gray-900">£2,800</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="flex flex-col justify-center order-3 md:order-4">
-            <h3 class="text-3xl font-medium mb-4">Internal Tool Development</h3>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <span class="text-lg font-bold text-purple-600">02</span>
+                </div>
+                <h3 class="text-3xl font-medium">Sub-broker management built in</h3>
+            </div>
             <p class="text-gray-600 leading-relaxed mb-6">
-                Build custom AI-powered tools that solve your team's unique operational challenges. From data processing automation to intelligent dashboards, we develop internal tools that enhance productivity and decision-making across your organization.
+                Track who brought in what. Calculate splits automatically. See performance at a glance. Your network is an asset — treat it like one.
             </p>
-            <ul class="space-y-3 mb-8">
+            <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Custom dashboard development</span>
+                    <span class="text-gray-700">Automatic commission splits</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Data processing automation</span>
+                    <span class="text-gray-700">Performance tracking</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Team-specific AI assistants</span>
+                    <span class="text-gray-700">Deal attribution</span>
                 </li>
             </ul>
-            
-            <!-- Real-world Example -->
-            <div class="bg-purple-50 rounded-xl p-6 border border-purple-100">
-                <h4 class="text-sm font-semibold text-purple-900 mb-3">Real-world example</h4>
-                <p class="text-sm text-gray-700 leading-relaxed mb-3">
-                    <span class="font-semibold text-gray-900">SaaS company</span> sales team manually compiled weekly performance reports from 5 different data sources, taking 6 hours per week.
-                </p>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="bg-white rounded-lg p-3">
-                        <div class="text-xs text-gray-500 mb-1">Before</div>
-                        <div class="text-lg font-bold text-gray-900">6 hours/week</div>
-                        <div class="text-xs text-gray-600">Manual reporting</div>
-                    </div>
-                    <div class="bg-white rounded-lg p-3">
-                        <div class="text-xs text-gray-500 mb-1">After</div>
-                        <div class="text-lg font-bold text-purple-600">Real-time</div>
-                        <div class="text-xs text-gray-600">AI-powered dashboard</div>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <!-- Service 3 -->
+        <!-- Feature 3 -->
         <div class="flex flex-col justify-center order-5 md:order-5">
-            <h3 class="text-3xl font-medium mb-4">GTM Product Development</h3>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                    <span class="text-lg font-bold text-green-600">03</span>
+                </div>
+                <h3 class="text-3xl font-medium">E-signatures without the faff</h3>
+            </div>
             <p class="text-gray-600 leading-relaxed mb-6">
-                Transform your AI innovation into market-ready products. We guide you through the entire go-to-market journey — from product strategy and development to launch planning and market positioning — ensuring your AI solution resonates with your target customers.
+                Send contracts for signing directly from deal records. Track status. Auto-attach signed documents. One less tab to manage.
             </p>
-            <ul class="space-y-3 mb-8">
+            <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Product strategy & positioning</span>
+                    <span class="text-gray-700">Send from deal records</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">MVP development & testing</span>
+                    <span class="text-gray-700">Real-time status tracking</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
-                    <span class="text-gray-700">Launch planning & execution</span>
+                    <span class="text-gray-700">Automatic document attachment</span>
                 </li>
             </ul>
-            
-            <!-- Real-world Example -->
-            <div class="bg-green-50 rounded-xl p-6 border border-green-100">
-                <h4 class="text-sm font-semibold text-green-900 mb-3">Real-world example</h4>
-                <p class="text-sm text-gray-700 leading-relaxed mb-3">
-                    <span class="font-semibold text-gray-900">B2B tech company</span> had an innovative AI feature but no clear path to market. We developed positioning, pricing strategy, and launch plan.
-                </p>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="bg-white rounded-lg p-3">
-                        <div class="text-xs text-gray-500 mb-1">Timeline</div>
-                        <div class="text-lg font-bold text-gray-900">12 weeks</div>
-                        <div class="text-xs text-gray-600">Concept to launch</div>
-                    </div>
-                    <div class="bg-white rounded-lg p-3">
-                        <div class="text-xs text-gray-500 mb-1">Result</div>
-                        <div class="text-lg font-bold text-green-600">$1.2M ARR</div>
-                        <div class="text-xs text-gray-600">First 6 months</div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100 min-h-[300px] flex items-center justify-center order-6 md:order-6">
             <div class="w-full max-w-md">
                 <div class="bg-white rounded-xl shadow-lg p-6">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                            <TrendingUp size={20} class="text-green-600" />
+                            <CheckCircle2 size={20} class="text-green-600" />
                         </div>
                         <div>
-                            <div class="text-sm font-semibold text-gray-900">Product Roadmap</div>
-                            <div class="text-xs text-gray-500">Q1 2024 Launch</div>
+                            <div class="text-sm font-semibold text-gray-900">Contract Status</div>
+                            <div class="text-xs text-gray-500">Active Documents</div>
                         </div>
                     </div>
                     <div class="space-y-3">
                         <div class="p-3 bg-green-50 rounded-lg border border-green-200">
-                            <div class="text-xs font-medium text-gray-900 mb-1">Phase 1: Market Research</div>
-                            <div class="h-1.5 bg-green-200 rounded-full overflow-hidden">
-                                <div class="h-full bg-green-600 rounded-full" style="width: 100%"></div>
+                            <div class="flex justify-between items-center mb-1">
+                                <div class="text-xs font-medium text-gray-900">Energy Supply Agreement</div>
+                                <CheckCircle2 size={14} class="text-green-600" />
                             </div>
+                            <div class="text-[10px] text-gray-500">Signed 2 hours ago</div>
                         </div>
-                        <div class="p-3 bg-green-50 rounded-lg border border-green-200">
-                            <div class="text-xs font-medium text-gray-900 mb-1">Phase 2: MVP Development</div>
-                            <div class="h-1.5 bg-green-200 rounded-full overflow-hidden">
-                                <div class="h-full bg-green-600 rounded-full" style="width: 75%"></div>
+                        <div class="p-3 bg-orange-50 rounded-lg border border-orange-200">
+                            <div class="flex justify-between items-center mb-1">
+                                <div class="text-xs font-medium text-gray-900">Telecoms Contract</div>
+                                <Clock size={14} class="text-orange-600" />
                             </div>
+                            <div class="text-[10px] text-gray-500">Awaiting signature</div>
                         </div>
                         <div class="p-3 bg-gray-50 rounded-lg border border-gray-200">
-                            <div class="text-xs font-medium text-gray-700 mb-1">Phase 3: Beta Testing</div>
-                            <div class="h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                                <div class="h-full bg-gray-400 rounded-full" style="width: 30%"></div>
+                            <div class="flex justify-between items-center mb-1">
+                                <div class="text-xs font-medium text-gray-700">Broker Agreement</div>
+                                <div class="text-[10px] text-gray-500">Draft</div>
                             </div>
+                            <div class="text-[10px] text-gray-500">Ready to send</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="flex flex-col justify-center order-7 md:order-7">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <span class="text-lg font-bold text-orange-600">04</span>
+                </div>
+                <h3 class="text-3xl font-medium">Commission tracking that actually works</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Expected, pending, received. By deal, by sub-broker, by period. Forecasting you can trust because it's based on your real pipeline.
+            </p>
+            <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Expected vs actual tracking</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Period-based reporting</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Accurate forecasting</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 border border-orange-100 min-h-[300px] flex items-center justify-center order-8 md:order-8">
+            <div class="w-full max-w-md">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <TrendingUp size={20} class="text-orange-600" />
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-gray-900">Commission Overview</div>
+                            <div class="text-xs text-gray-500">Q1 2024</div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-green-50 rounded-lg">
+                            <div class="text-[10px] text-gray-500 mb-1">Received</div>
+                            <div class="text-xl font-bold text-green-600">£42,800</div>
+                        </div>
+                        <div class="p-3 bg-orange-50 rounded-lg">
+                            <div class="text-[10px] text-gray-500 mb-1">Pending</div>
+                            <div class="text-xl font-bold text-orange-600">£28,400</div>
+                        </div>
+                        <div class="p-3 bg-blue-50 rounded-lg">
+                            <div class="text-[10px] text-gray-500 mb-1">Expected (Pipeline)</div>
+                            <div class="text-xl font-bold text-blue-600">£64,200</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-100 min-h-[300px] flex items-center justify-center order-10 md:order-9">
+            <div class="w-full max-w-md">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                            <Shield size={20} class="text-indigo-600" />
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-gray-900">Compliance Checklist</div>
+                            <div class="text-xs text-gray-500">Deal #2847</div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between p-2 bg-green-50 rounded">
+                            <span class="text-xs text-gray-700">ID Verification</span>
+                            <CheckCircle2 size={14} class="text-green-600" />
+                        </div>
+                        <div class="flex items-center justify-between p-2 bg-green-50 rounded">
+                            <span class="text-xs text-gray-700">Proof of Address</span>
+                            <CheckCircle2 size={14} class="text-green-600" />
+                        </div>
+                        <div class="flex items-center justify-between p-2 bg-orange-50 rounded border border-orange-200">
+                            <span class="text-xs text-gray-900 font-medium">Credit Check</span>
+                            <Clock size={14} class="text-orange-600" />
+                        </div>
+                        <div class="flex items-center justify-between p-2 bg-gray-50 rounded opacity-50">
+                            <span class="text-xs text-gray-500">Final Approval</span>
+                            <div class="w-3 h-3 rounded-full border-2 border-gray-300"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center order-9 md:order-10">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                    <span class="text-lg font-bold text-indigo-600">05</span>
+                </div>
+                <h3 class="text-3xl font-medium">Compliance without complexity</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Document collection workflows. Audit trails. Approval chains. Stay regulated without drowning in admin.
+            </p>
+            <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Document collection workflows</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Complete audit trails</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Approval chain management</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="flex flex-col justify-center order-11 md:order-11">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">
+                    <span class="text-lg font-bold text-pink-600">06</span>
+                </div>
+                <h3 class="text-3xl font-medium">Reports that answer real questions</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                "How much commission is pending from sub-broker X this quarter?" Get answers in seconds, not spreadsheet sessions.
+            </p>
+            <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Pre-built broker reports</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Custom report builder</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={20} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700">Real-time data updates</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 border border-pink-100 min-h-[300px] flex items-center justify-center order-12 md:order-12">
+            <div class="w-full max-w-md">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">
+                            <TrendingUp size={20} class="text-pink-600" />
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-gray-900">Quick Reports</div>
+                            <div class="text-xs text-gray-500">Most Used</div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <button class="w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <div class="text-xs font-medium text-gray-900">Commission by Sub-Broker</div>
+                            <div class="text-[10px] text-gray-500">This quarter</div>
+                        </button>
+                        <button class="w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <div class="text-xs font-medium text-gray-900">Pipeline by Stage</div>
+                            <div class="text-[10px] text-gray-500">Current month</div>
+                        </button>
+                        <button class="w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <div class="text-xs font-medium text-gray-900">Pending Commissions</div>
+                            <div class="text-[10px] text-gray-500">All time</div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -417,11 +580,244 @@
     </div>
   </section>
 
-  <!-- Process Section -->
-  <section id="process" class="max-w-[1400px] mx-auto px-6 py-24">
+  <!-- Who It's For Section -->
+  <section id="who-its-for" class="max-w-[1400px] mx-auto px-6 py-24 bg-gray-50 rounded-3xl">
+    <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-8 text-center">
+      Who it's for
+    </h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16 text-center">
+      Built for brokers who earn on commission.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h3 class="text-2xl font-semibold mb-4">Energy brokers</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Manage supplier relationships, track contract renewals, and never miss a commission payment. Built with insight from the UK energy market.
+            </p>
+            <ul class="space-y-2">
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Supplier relationship management</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Contract renewal tracking</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Commission payment alerts</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h3 class="text-2xl font-semibold mb-4">Telecoms brokers</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Complex deals, multiple carriers, ongoing commissions. Track it all in one place with attribution that actually makes sense.
+            </p>
+            <ul class="space-y-2">
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Multi-carrier deal management</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Recurring commission tracking</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Clear deal attribution</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h3 class="text-2xl font-semibold mb-4">Mortgage brokers</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Application tracking, document management, compliance workflows. Purpose-built for regulated financial services.
+            </p>
+            <ul class="space-y-2">
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Application status tracking</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Document management system</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Compliance workflow automation</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h3 class="text-2xl font-semibold mb-4">Insurance brokers</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Policy lifecycle management, renewal tracking, sub-agent networks. All the complexity, none of the spreadsheet chaos.
+            </p>
+            <ul class="space-y-2">
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Policy lifecycle tracking</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Renewal management</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle2 size={16} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>Sub-agent network management</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="max-w-[1400px] mx-auto px-6 py-24">
+    <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-8 text-center">
+      Investment
+    </h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16 text-center">
+      Transparent pricing. Real value. One-time build, then ongoing support to keep everything running smoothly.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Starter -->
+        <div class="bg-white rounded-2xl p-8 border-2 border-gray-200">
+            <h3 class="text-2xl font-semibold mb-2">Pipeline Starter</h3>
+            <div class="mb-6">
+                <div class="text-4xl font-bold text-gray-900 mb-1">£6,000</div>
+                <div class="text-sm text-gray-600">+ £400/month support</div>
+            </div>
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Single pipeline setup</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Contact & company management</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Basic commission tracking</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Standard reporting</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Email integration</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">2 user licences</span>
+                </li>
+            </ul>
+            <a href="#contact" class="block w-full text-center bg-white text-black border-2 border-gray-200 px-6 py-3 rounded-full font-medium hover:bg-gray-50 transition-colors">
+                Get started
+            </a>
+        </div>
+
+        <!-- Pro (Most Popular) -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-300 relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-full">
+                MOST POPULAR
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Pipeline Pro</h3>
+            <div class="mb-6">
+                <div class="text-4xl font-bold text-gray-900 mb-1">£12,000</div>
+                <div class="text-sm text-gray-600">+ £750/month support</div>
+            </div>
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Everything in Starter</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Sub-broker management</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">E-signature integration</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Advanced commission splits</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Custom reporting dashboard</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Compliance workflows</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">10 user licences</span>
+                </li>
+            </ul>
+            <a href="#contact" class="block w-full text-center bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors">
+                Get started
+            </a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="bg-white rounded-2xl p-8 border-2 border-gray-200">
+            <h3 class="text-2xl font-semibold mb-2">Pipeline Enterprise</h3>
+            <div class="mb-6">
+                <div class="text-4xl font-bold text-gray-900 mb-1">£20,000+</div>
+                <div class="text-sm text-gray-600">+ £1,200/month support</div>
+            </div>
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Everything in Pro</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">AI-powered data queries</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Multi-team pipelines</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Supplier portal integrations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">White-labelling options</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Custom automations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <CheckCircle2 size={18} class="text-green-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-sm text-gray-700">Unlimited users</span>
+                </li>
+            </ul>
+            <a href="#contact" class="block w-full text-center bg-white text-black border-2 border-gray-200 px-6 py-3 rounded-full font-medium hover:bg-gray-50 transition-colors">
+                Get started
+            </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="max-w-[1400px] mx-auto px-6 py-24">
     <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-4xl font-medium tracking-tight mb-4">Our proven implementation process</h2>
-        <p class="text-gray-600">From initial discovery to full deployment, we follow a structured approach that ensures rapid results and measurable ROI at every stage.</p>
+        <h2 class="text-4xl font-medium tracking-tight mb-4">How it works</h2>
+        <p class="text-gray-600">Live in two weeks, not two quarters.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -430,11 +826,10 @@
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-blue-600">1</span>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Discovery & Audit</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                We analyze your current workflows, identify bottlenecks, and map opportunities for AI integration.
+            <h3 class="text-xl font-semibold mb-3">Discovery call</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                30 minutes to understand your business. Your pipeline stages, commission structures, team size, pain points. No sales pitch — just questions.
             </p>
-            <div class="text-xs text-gray-500 font-medium">Timeline: 1-2 weeks</div>
         </div>
 
         <!-- Step 2 -->
@@ -442,11 +837,10 @@
             <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-purple-600">2</span>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Strategy & Planning</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                Develop a comprehensive implementation roadmap with clear milestones and ROI projections.
+            <h3 class="text-xl font-semibold mb-3">Configuration & build</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Your CRM built on a battle-tested foundation, customised to your exact workflow. You'll see progress throughout, not just at the end.
             </p>
-            <div class="text-xs text-gray-500 font-medium">Timeline: 1 week</div>
         </div>
 
         <!-- Step 3 -->
@@ -454,11 +848,10 @@
             <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-green-600">3</span>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Rapid Pilot</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                Launch a focused automation pilot to demonstrate value and gather real-world performance data.
+            <h3 class="text-xl font-semibold mb-3">Training & handover</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Your team trained on the system. Documentation for everything. You're not dependent on me to use what I built.
             </p>
-            <div class="text-xs text-gray-500 font-medium">Timeline: 2-4 weeks</div>
         </div>
 
         <!-- Step 4 -->
@@ -466,307 +859,11 @@
             <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-orange-600">4</span>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Scale & Optimize</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                Expand successful implementations across your organization with ongoing optimization and support.
-            </p>
-            <div class="text-xs text-gray-500 font-medium">Timeline: Ongoing</div>
-        </div>
-    </div>
-  </section>
-
-  <!-- Results & Testimonials -->
-  <section id="results" class="max-w-[1400px] mx-auto px-6 py-24">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-4xl font-medium tracking-tight mb-4">Trusted by scaling operations teams</h2>
-        <p class="text-gray-600">See how mid-market leaders are transforming their businesses with strategic AI implementation.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <!-- Result 1 -->
-        <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <div class="text-4xl font-bold text-gray-900 mb-2">60%</div>
-            <div class="text-sm font-medium text-gray-700 mb-3">Faster Processing Time</div>
-            <p class="text-xs text-gray-500 leading-relaxed">Operations team reduced manual data processing from 8 hours to 3 hours daily with custom AI workflow.</p>
-        </div>
-
-        <!-- Result 2 -->
-        <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <div class="text-4xl font-bold text-gray-900 mb-2">$2.4M</div>
-            <div class="text-sm font-medium text-gray-700 mb-3">Annual Cost Savings</div>
-            <p class="text-xs text-gray-500 leading-relaxed">Mid-market SaaS company eliminated need for 6 FTE positions through intelligent automation.</p>
-        </div>
-
-        <!-- Result 3 -->
-        <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <div class="text-4xl font-bold text-gray-900 mb-2">3 weeks</div>
-            <div class="text-sm font-medium text-gray-700 mb-3">To First ROI</div>
-            <p class="text-xs text-gray-500 leading-relaxed">E-commerce operations team saw measurable efficiency gains within first month of pilot deployment.</p>
-        </div>
-    </div>
-
-    <!-- Testimonials -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
-            <div class="flex items-start gap-4 mb-4">
-                <img src="/generated/image-confident-male-executive-in-business-cas-1770069849604-1.webp" alt="Michael Chen" class="w-14 h-14 rounded-full object-cover" />
-                <div>
-                    <div class="font-semibold text-gray-900">Michael Chen</div>
-                    <div class="text-sm text-gray-600">VP Operations, TechScale Inc.</div>
-                </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed italic">
-                "Flowgrid transformed our operations in weeks, not months. Their rapid pilot approach let us see real results before committing to a full rollout. We're now processing 3x more customer requests with the same team size."
-            </p>
-        </div>
-
-        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100">
-            <div class="flex items-start gap-4 mb-4">
-                <img src="/generated/image-professional-female-business-leader-in-h-1770069851754-2.webp" alt="Sarah Martinez" class="w-14 h-14 rounded-full object-cover" />
-                <div>
-                    <div class="font-semibold text-gray-900">Sarah Martinez</div>
-                    <div class="text-sm text-gray-600">COO, GrowthCo</div>
-                </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed italic">
-                "Finally, an AI consultancy that understands mid-market constraints. No enterprise-level budgets required, no six-month timelines. Just practical solutions that work with our existing stack."
-            </p>
-        </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us Section -->
-  <section class="max-w-[1400px] mx-auto px-6 py-24 bg-gray-50 rounded-3xl">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-4xl font-medium tracking-tight mb-4">Why mid-market leaders choose Flowgrid</h2>
-        <p class="text-gray-600">We understand the unique challenges of scaling businesses — limited resources, tight timelines, and the need for proven results.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <Clock size={24} class="text-blue-600" />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Rapid Implementation</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">See results in weeks, not months. Our rapid pilot approach delivers measurable value quickly.</p>
-        </div>
-
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <Target size={24} class="text-purple-600" />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Mid-Market Focus</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">Solutions designed for your scale — no enterprise budgets or resources required.</p>
-        </div>
-
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <CheckCircle2 size={24} class="text-green-600" />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Proven Frameworks</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">Battle-tested methodologies that eliminate implementation fears and reduce risk.</p>
-        </div>
-
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <Zap size={24} class="text-orange-600" />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Stack Integration</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">Work with your existing tools and systems — no expensive platform migrations.</p>
-        </div>
-
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                <Users size={24} class="text-indigo-600" />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Hands-On Support</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">Direct access to our team throughout implementation and beyond.</p>
-        </div>
-
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-            <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp size={24} class="text-pink-600" />
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Measurable ROI</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">Clear metrics and KPIs tracked from day one to demonstrate business impact.</p>
-        </div>
-    </div>
-  </section>
-
-  <!-- Tech Stack & Accreditation Section -->
-  <section class="max-w-[1400px] mx-auto px-6 py-24">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-4xl font-medium tracking-tight mb-4">Built on cutting-edge AI technology</h2>
-        <p class="text-gray-600">We leverage the most advanced AI platforms and tools to deliver enterprise-grade solutions that scale with your business.</p>
-    </div>
-
-    <!-- Tech Stack Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Base44 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Award size={24} class="text-blue-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Base44</h3>
-                    <p class="text-xs text-gray-500">Accredited Partner</p>
-                </div>
-            </div>
+            <h3 class="text-xl font-semibold mb-3">Ongoing support</h3>
             <p class="text-sm text-gray-600 leading-relaxed">
-                Official Base44 accredited partner, demonstrating excellence in AI implementation and deep expertise in cutting-edge technologies.
+                Issues handled within 24 hours. Monthly improvements included. Your CRM keeps getting better, not just maintained.
             </p>
         </div>
-        <!-- OpenAI -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-white" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">OpenAI GPT-4</h3>
-                    <p class="text-xs text-gray-500">Language Models</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Advanced language understanding and generation for intelligent automation and natural language processing.
-            </p>
-        </div>
-
-        <!-- Anthropic Claude -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-orange-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Anthropic Claude</h3>
-                    <p class="text-xs text-gray-500">AI Assistant</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Constitutional AI for safe, helpful, and harmless business automation with extended context windows.
-            </p>
-        </div>
-
-        <!-- LangChain -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-green-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">LangChain</h3>
-                    <p class="text-xs text-gray-500">AI Framework</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Powerful framework for building complex AI applications with chains, agents, and memory systems.
-            </p>
-        </div>
-
-        <!-- Vector Databases -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-purple-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Weaviate</h3>
-                    <p class="text-xs text-gray-500">Vector Database</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                High-performance vector search for semantic understanding and intelligent data retrieval at scale.
-            </p>
-        </div>
-
-        <!-- Python & FastAPI -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-blue-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Python & FastAPI</h3>
-                    <p class="text-xs text-gray-500">Backend Infrastructure</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Modern, fast web framework for building robust APIs and microservices that power AI workflows.
-            </p>
-        </div>
-
-        <!-- Cloud Platforms -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-indigo-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">AWS & Azure</h3>
-                    <p class="text-xs text-gray-500">Cloud Infrastructure</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Enterprise-grade cloud platforms for scalable, secure, and reliable AI deployment and operations.
-            </p>
-        </div>
-
-        <!-- Supabase -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-emerald-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Supabase</h3>
-                    <p class="text-xs text-gray-500">Backend Platform</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Open-source Firebase alternative providing real-time databases, authentication, and storage for rapid development.
-            </p>
-        </div>
-
-        <!-- Vercel -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-white" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Vercel</h3>
-                    <p class="text-xs text-gray-500">Deployment Platform</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Modern deployment platform for frontend frameworks with edge functions and global CDN for optimal performance.
-            </p>
-        </div>
-
-        <!-- Figma -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-4 mb-4">
-                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code2 size={24} class="text-pink-600" />
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-1">Figma</h3>
-                    <p class="text-xs text-gray-500">Design Platform</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                Collaborative design tool for creating intuitive user interfaces and seamless user experiences for AI products.
-            </p>
-        </div>
-    </div>
-
-    <!-- Additional Tech Info -->
-    <div class="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
-        <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Our tech stack is constantly evolving to incorporate the latest advancements in AI technology. We evaluate and integrate new tools and platforms to ensure our clients benefit from cutting-edge capabilities while maintaining stability and security.
-        </p>
     </div>
   </section>
 
@@ -786,21 +883,21 @@
                 {#if openFaq === i}
                     <div class="mt-4 text-sm text-gray-600 leading-relaxed pb-2">
                         {#if i === 0}
-                            We specialize in workflow automation, internal tool development, and go-to-market product strategy. Our focus is on practical AI implementations that integrate with your existing tech stack and deliver measurable ROI.
+                            This is built specifically for commission-based brokers. Salesforce is enterprise complexity you don't need. HubSpot is designed for SaaS companies. This has sub-broker tracking, commission splits, and supplier management built in — not bolted on.
                         {:else if i === 1}
-                            Our rapid pilot approach typically delivers initial results within 2-4 weeks. Full implementation timelines vary based on scope, but most projects reach production deployment within 6-8 weeks.
+                            Two weeks from discovery call to go-live. Week one is configuration and build. Week two is training and handover. You'll see progress throughout, not just at the end.
                         {:else if i === 2}
-                            While we specialize in mid-market companies (50-500 employees), we work with any scaling business that needs rapid AI implementation without enterprise-level budgets or timelines.
+                            Yes. Email integration is standard. We can connect to most accounting software, e-signature platforms, and document storage systems. If you have specific integration needs, mention them in the discovery call.
                         {:else if i === 3}
-                            We offer project-based pricing and retainer options. Pricing depends on scope and complexity, but we're designed to be accessible to mid-market budgets. Contact us for a custom quote.
+                            Bug fixes within 24 hours. Monthly feature improvements based on your feedback. System updates and maintenance. Email and phone support during UK business hours.
                         {:else if i === 4}
-                            We establish clear KPIs before implementation and track metrics like processing time reduction, cost savings, throughput improvements, and error rate decreases. Most clients see measurable ROI within 3-4 weeks.
+                            Yes. While the system was built with insight from UK energy and telecoms brokers, it works for commission-based businesses anywhere. Pricing and support terms may vary by region.
                         {:else if i === 5}
-                            Yes. We provide ongoing optimization, monitoring, and support packages to ensure your AI solutions continue delivering value as your business scales.
+                            Absolutely. Your pipeline stages are configured during the build phase to match your actual sales process. You can have as many stages as you need, named whatever makes sense for your business.
                         {:else if i === 6}
-                            We work across industries including technology, financial services, healthcare, e-commerce, SaaS, and professional services. Our frameworks adapt to industry-specific requirements.
+                            That's what the monthly support fee covers. Small changes and tweaks are included. Larger feature additions would be quoted separately, but you're never locked in — you own your data and can export it anytime.
                         {:else if i === 7}
-                            Absolutely. Stack integration is a core part of our approach. We work with your existing tools and platforms — no expensive migrations or platform changes required.
+                            Yes. Your data is encrypted at rest and in transit. Hosted on enterprise-grade infrastructure with daily backups. You can export your data at any time. We never sell or share your data with third parties.
                         {/if}
                     </div>
                 {/if}
@@ -811,19 +908,16 @@
 
   <!-- Bottom CTA -->
   <section id="contact" class="max-w-[1400px] mx-auto px-6 py-24 flex flex-col items-center text-center border-t border-gray-100">
-      <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-4">Ready to transform your operations with AI?</h2>
+      <h2 class="text-4xl md:text-5xl font-medium tracking-tight mb-4">Ready to stop fighting your tools?</h2>
       <p class="text-lg text-gray-600 mb-8 max-w-2xl">
-        Book a free AI strategy audit and discover how we can help you implement automation that delivers measurable ROI in weeks.
+        Book a 30-minute call. No pitch, no pressure. Just a conversation about whether this is right for your business.
       </p>
       <div class="flex flex-col sm:flex-row items-center gap-4">
-          <a href="#audit" class="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors text-base">
-              Book your free audit
-          </a>
-          <a href="#contact" class="bg-white text-black border-2 border-gray-200 px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-colors text-base">
-              Talk to our team
+          <a href="#contact" class="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors text-base">
+              Book your call
           </a>
       </div>
-      <p class="text-sm text-gray-500 mt-6">No commitment required • 30-minute consultation • Custom implementation roadmap</p>
+      <p class="text-sm text-gray-500 mt-6">30-minute discovery call • No commitment required • See if it's a fit</p>
   </section>
 </main>
 
